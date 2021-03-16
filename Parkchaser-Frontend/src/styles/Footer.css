@@ -1,0 +1,159 @@
+
+
+.footerContainer{
+	height: 289px;
+	
+}
+.flex-rw {
+	display: flex;
+	color: white;
+	padding: 42px 30px 12px 30px;
+	height: 252px;
+
+	background-color: black;
+}
+.input-group{
+	display: flex;
+}
+.inputform{
+	width: calc(100% - 130px) !important;
+	box-sizing: border-box;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+footer {
+  background: rgb(55,55,55);
+  margin-top: auto;
+  width: 100%
+}
+.footer-list-top {
+  width: 33.333%;
+  padding-right: 50px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.mobile-widget{
+	display: none;
+}
+.company-link{
+	border-top: 1px solid #414753;
+	padding-top: 16px;
+	padding-left: 75px;
+	height: 50px;
+	background-color: black;
+}
+.footer-link{
+	display: inline-block;
+	margin-right: 30px;
+}
+
+@media all and (min-width: 700px) and (max-width: 1200px){
+	main {
+		font-size: 5em
+	}
+	.footerContainer{
+		width: 100%;
+	}
+	.flex-rw {
+		display: block;
+		box-sizing: border-box;
+		height: 320px;
+	}
+	.footer-list-top {
+		width: 100%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.session2{
+		display: none;
+	}
+	.session3{
+		display: none;
+	}
+	.contact{
+		display: none;
+	}
+	.mobile-widget{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.company-link{
+		padding-left: 0px;
+		text-align: center;
+	}
+	.footer-link{
+		display: block;
+		margin-right: 0px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	main {
+		font-size: 5em
+	}
+	.footerContainer{
+		width: 100%;
+	}
+	.flex-rw {
+		display: block;
+		box-sizing: border-box;
+		height: 320px;
+	}
+	.footer-list-top {
+		width: 100%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.session2{
+		display: none;
+	}
+	.session3{
+		display: none;
+	}
+	.contact{
+		display: none;
+	}
+	.mobile-widget{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.company-link{
+		padding-left: 0px;
+		text-align: center;
+	}
+	.footer-link{
+		display: block;
+		margin-right: 0px;
+	}
+}
+
+/* Button */
+
+.mobile-button{
+	width: 100%;
+	color:rgb(9, 167, 226);
+	font-size: 18px;
+	border: 1px solid rgb(9, 167, 226);
+	background-color: transparent;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.emailinput {
+	height: 44px;
+	width: 292px;
+	font-family: Roboto;
+	font-size: 18px;
+	padding-left: 20px !important; 
+	border: 0px;
+}
+.errorinput
+{
+	height: 40px;
+	width: 292px;
+	padding-left: 20px !important; 
+	border: 1px solid #B1B1B1;
+	font-family: Roboto;
+	font-size: 18px;
+    border: 2px solid #eb516d;
+}

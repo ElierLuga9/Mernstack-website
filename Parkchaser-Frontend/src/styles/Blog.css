@@ -1,0 +1,77 @@
+.blogListItem{
+    display: flex;
+    margin-bottom: 30px;
+    height: 270px;
+}
+.blogImageArea{
+    min-width: 400px;
+    height: 100%;
+    overflow: hidden;
+}
+.blogImage{
+    width: 400px;
+    min-height: 100%;
+    object-fit: fill;
+}
+.blogTextArea{
+    margin-left: 30px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.blogTextContent{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blogTitle:hover{
+    color: #068DBF;
+}
+/*Thumbnail*/
+.blogListThumbnailItem{
+    display: flex;
+    margin-bottom: 30px;
+    height: 80px;
+}
+.blogImageThumbnailArea{
+    min-width: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+.blogThumbnailImage{
+    width: 100px;
+    min-height: 100%;
+    object-fit: fill;
+}
+.blogTextThumbnailArea{
+    margin-left: 30px;
+    height: 100%;
+    width: 170px;
+    display: flex;
+    flex-flow: column;
+}
+
+.blogTextThumbnailContent{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+}
+
+@media all and (max-width: 700px) {
+    .blogListItem{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .blogImageArea{
+        min-width: 0px;
+    }
+    .blogTextArea{
+        margin-left: 0px;
+    }
+    .blogImage{
+        width: 100%;
+    }
+    .mainDetailPanel{
+        padding: 20px;
+    }
+}

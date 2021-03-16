@@ -1,0 +1,4 @@
+User-agent:Googlebot-Mobile
+
+
+Sitemap: https://www.parkchaser.com/sitemap.xml

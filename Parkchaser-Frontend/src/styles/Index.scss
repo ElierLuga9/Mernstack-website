@@ -1,0 +1,251 @@
+$small: 420px;
+$medium: 1024px;
+
+.state-items{
+	margin-right: 20px;
+}
+.mobile-state-selector{
+	display: none;
+	padding:20px;
+	margin-bottom: 20px;
+}
+.mobile-state-selector-label{
+	color: white;
+	margin: 10px; 
+	text-transform: uppercase;
+}
+.mobile-selector{
+	width: 100%;
+	height: 50px;
+	max-width: 350px;
+	background-color: white;
+	border-radius: 0px;
+
+	padding-left: 20px;
+	font-size: 18px;
+}
+.instagram-container{
+	background-color: black;
+	color: white;
+	padding: 35px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Main layout*/
+.whtieArea{
+	padding: 20px 100px 100px 100px;
+	background-color: white;
+	@media all and (min-width: $small) and (max-width: 1250px){
+		padding: 50px 30px 30px 30px;
+	}
+	@media all and (max-width: $small){
+		padding: 30px 0px;
+		background-color: transparent;
+	}
+
+	.title{
+		margin: auto;
+		text-align: center;
+		max-width: 550px;
+		color: #09a7e2;
+		font-size: 36px;
+		@media all and (max-width: $medium){
+			display: none;
+		}
+	}
+	.mPanel{
+		width: calc(100% - 200px);
+		padding: 0px 20px;
+		overflow: hidden;
+		box-sizing: border-box;
+		@media all and (min-width: $small) and (max-width: $medium){
+			width: 100%;
+		}
+		@media all and (max-width: $small) {
+			width: 100%;
+			padding: 0px;
+			text-align: left;
+		}
+
+		.guide{
+			display: flex;
+			height: 325px;
+			max-width: 800px;
+			margin: auto;
+			margin-bottom: 50px;
+			@media all and (min-width: $small) and (max-width: 1250px){
+				height: 230px;
+			}
+			@media all and (max-width: 700px){
+				flex-direction: column;
+				height: fit-content;
+			}
+			.image{
+				width: 325px;
+				margin: auto;
+				@media all and (min-width: $small) and (max-width: 1250px){
+					width: 230px;
+				}
+				@media all and (max-width: $small){
+					width: 100%;
+				}
+				height: 100%;
+			}
+			.text{
+				padding: 70px 20px 20px 20px;
+				@media all and (min-width: $small) and (max-width: 1250px){
+					padding: 35px 20px 20px 20px;
+				}
+				@media all and (min-width: $small) and (max-width: $medium){
+					text-align: center;
+				}
+				@media all and (max-width: $small){
+					padding: 20px 0px;
+				}
+			}
+		}
+	}
+	.sPanel{
+		width: 200px;
+		max-width: 100%;
+		padding: 0px 20px;
+		overflow: hidden;
+		@media all and (min-width: $small) and (max-width: $medium){
+			position: relative;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+		@media all and (max-width: $small) {
+			position: relative;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+	}
+	.sPanelMain{
+		@media all and (max-width: $medium){
+			display: none;
+		}
+	}
+}
+.mainContainer{
+	margin: auto;
+	max-width: 1440px;
+	display: flex;
+	padding: 20px 50px;
+	@media all and (min-width: $small) and (max-width: $medium){
+		padding: 40px 0px;
+		flex-direction: column;
+	}
+	@media all and (max-width: $small) {
+		flex-direction: column;
+		padding: 20px 0px;
+	}
+	.mainPanel{
+		width: calc(100% - 300px);
+		padding: 30px 20px;
+		overflow: hidden;
+		box-sizing: border-box;
+		@media all and (min-width: $small) and (max-width: $medium){
+			width: 100%;
+			padding: 30px 0px;
+		}
+		@media all and (max-width: $small) {
+			width: 100%;
+			padding: 30px 0px;
+			text-align: left;
+		}
+	}
+	.sidePanel{
+		width: 300px;
+		max-width: 100%;
+		padding: 0px 20px;
+		overflow: hidden;
+		@media all and (min-width: $small) and (max-width: $medium){
+			position: relative;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+		@media all and (max-width: $small) {
+			position: relative;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+	}
+	.sidePanelMain{
+		@media all and (max-width: $medium){
+			display: none;
+		}
+	}
+}
+
+@media all and (min-width: $small) and (max-width: $medium){
+
+
+	.mobile-state-selector{
+		display: block;
+		background-color: #09A7E2;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+	.desktop-state-selector{
+		display: none;
+	}
+	.instagram-container{
+		margin-right: -20px;
+		margin-left: -20px;
+		padding: 15px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.blogListThumbnailItem{
+		height: 220px !important;
+	}
+	.blogImageThumbnailArea{
+		width: 40%;
+	}
+	.blogTextThumbnailArea{
+		width: 60% !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.blogThumbnailImage{
+		width: 100% !important;
+	}
+	.blogTitle{
+		font-size: 22px;
+	}
+
+}
+@media all and (max-width: $small) {
+
+	.mobile-state-selector{
+		display: block;
+		background-color: #09A7E2;
+		text-align: center;
+	}
+	.desktop-state-selector{
+		display: none;
+	}
+	.instagram-container{
+		margin-right: -20px;
+		margin-left: -20px;
+		padding: 15px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.mobile-state-selector-label{
+		font-size: 26px;
+	}
+}

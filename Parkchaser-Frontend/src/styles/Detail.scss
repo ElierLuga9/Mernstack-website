@@ -1,0 +1,121 @@
+$small: 420px;
+$medium: 1024px;
+
+.skatepark-subtitle{
+	text-transform: uppercase;
+	margin: 0px;
+	@media all and (max-width: $small) {
+		font-size: 22px;
+	}
+}
+.ratingText{
+	justify-content: center;
+    flex-direction: column;
+	display: -webkit-inline-box;
+}
+
+.reviewCard{
+	margin-bottom: 60px;
+}
+
+.css-h67k8{
+	margin-top: 80px;
+}
+.css-9xjzrb{
+	margin-top: 80px;
+}
+/* Main layout*/
+
+.mainDetailContainer{
+	width: 100%;
+	display: grid;
+	
+}
+.sideDetailPanel{
+	position: absolute;
+	width: 300px;
+	right: 30px;
+
+	margin:10px;
+}
+.mainDetailPanel{
+	min-height: 2050px;
+	margin: 10px;
+	margin-right: 320px;
+	padding-right: 80px;
+	text-align: left;
+}
+.mobile-image-viewer{
+	display: none;
+}
+.desktop-image-viewer{
+	width: 100%;
+	background-color: white;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.review{
+	display: flex;
+}
+.nearby-skateparks{
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	@media all and (max-width: $small) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.satMap{
+	height: 430px;
+	width: 100%;
+}
+@media all and (min-width: 1920px) {
+	.sideDetailPanel{
+		right: 170px;
+	}
+}
+@media all and (max-width: $small) {
+	
+	.mainDetailContainer{
+		width: 100%;
+		display: grid;
+		padding-top: 0px;
+		
+	}
+	.sideDetailPanel{
+		position: absolute;
+		width: 300px;
+		right: 120px;
+	
+		margin:10px;
+		display: none;
+	}
+	.mainDetailPanel{
+		min-height: 0px;
+		margin: 0px;
+		padding-right: 0px;
+		text-align: left;
+	}
+	.mobile-image-viewer{
+		display:block;
+	}
+	.desktop-image-viewer{
+		display: none;
+	}
+	.social-share{
+		display: none;
+	}
+	.review{
+		display: block;
+		padding:20px;
+	}
+	.review-list{
+		width: 100%;
+		padding-right:0px;
+	}
+	
+	.satMap{
+		height: 350px;
+		width: 100%;
+	}
+}

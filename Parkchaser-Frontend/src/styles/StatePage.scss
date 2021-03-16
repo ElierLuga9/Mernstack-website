@@ -1,0 +1,207 @@
+$small: 420px;
+$medium: 1024px;
+
+.rating{
+	margin: auto;
+}
+
+.stateMap{
+	height: 450px;
+}
+.statemap-container{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.mainStateContainer{
+	width: 100%;
+	display: grid;
+}
+
+/*Random Place Card*/
+.card-wrapper{
+	display: flex;
+	justify-content: space-between;
+	min-height: 300px; 
+	@media all and (max-width: $small) {
+		flex-direction: column;
+	}
+	.cardContainerRandom{
+		display: flex;
+		flex-direction: column;
+		width: 250px;
+		max-width: 33%;
+		overflow: hidden;
+		padding-top: 20px;
+		padding-bottom: 20px; 
+		@media all and (max-width: $small) {
+			max-width: 100%;
+		}
+	}
+	.ratingContainerRandom{
+		width: 130px;
+		margin-left: 60px;
+		margin-bottom: 10px;
+	}
+}
+
+/*Place Card*/
+.cardContainer{
+	display: flex;
+	border-top: 1px solid #DEDEDE;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	@media all and (max-width: $small) {
+		display: block;
+	}
+}
+.cardImageContainer{
+	background-color: white;
+	padding: 10px;
+	width: 230px;
+}
+.ratingContainer{
+	width: 130px;
+	margin-bottom: 10px;
+}
+
+
+/*Sidebar images and text*/
+.inpage-logo{
+	height: 210px;
+	width: 210px;
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+	border: 5px solid white;
+	box-shadow: 0px 3px 6px #00000029;
+	box-sizing: border-box;
+    border-radius: 50%;
+	opacity: 1;
+	@media all and (min-width: $small) and (max-width: $medium){
+		width: 500px;
+		height: 500px;
+	}
+	.inpage-logo-image{
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		@media all and (min-width: $small) and (max-width: $medium){
+			position: relative;
+		}
+		@media all and (max-width: $small) {
+			left: 0px;
+		}
+	}
+}
+.sidenav-title{
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: -0.78px;
+	font-family: Roboto Condensed, Bold;
+	margin-bottom: 17px;
+}
+.sidenav-description{
+	font-size: 17px;
+    line-height: 25px;
+	text-align: center;
+}
+
+/**/
+.pageTitle{
+	text-transform: uppercase;
+}
+.pageDescription{
+	margin-bottom: 40px;
+	line-height: 25px;
+}
+
+/**/
+.randomSkateparks{
+	display: flex;
+	justify-content: space-between; 
+	min-height: 300px;
+}
+
+@media all and (min-width: $small) and (max-width: $medium){
+	.stateMap{
+		height: 400px;
+	}	
+	.statemap-container{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.mainStateContainer{
+		width: 100%;
+		display: grid;
+		padding-top: 0px;
+	}
+	.ratingContainer{
+		margin: auto;
+	}
+
+
+	.pageTitle{
+		text-align: center;
+		margin-right: 20px;
+	}
+	.pageDescription{
+		text-align: center;
+		margin: 10px;
+		margin-right: 30px;
+	}
+
+}
+@media all and (max-width: $small) {
+	.stateMap{
+		height: 400px;
+	}	
+	.statemap-container{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.mainStateContainer{
+		width: 100%;
+		display: grid;
+		padding-top: 0px;
+	}
+
+	.cardImageContainer{
+		margin: auto;
+	}
+
+	.randomSkateparksTitle{
+		font-size: 20pt;
+		text-align: center;
+	}
+	.cardContainerRandom{
+		margin: auto;
+	}
+	.pageTitle{
+		padding-top: 0px;
+		margin-right: 20px;
+		text-align: center;
+	}
+	.mapContainer{
+		display: none;
+	}
+	.randomSkateparks{
+		flex-direction: column;
+	}
+
+	.pageDescription{
+		text-align: center;
+		margin: 10px;
+	}
+
+	.sidenav-title{
+		text-align: center;
+	}
+	.sidenav-description{
+		padding: 0px 10px;
+	}
+
+	.recentBlogs{
+		margin: 0px 0px 0px 20px;
+	}
+}
